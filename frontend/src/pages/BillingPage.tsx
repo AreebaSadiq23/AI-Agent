@@ -14,7 +14,7 @@ const PLANS = [
     price: "$79",
     tagline: "For growing teams",
     features: [
-      "All 18 AI employees",
+      "All 20 AI employees",
       "3 workspaces",
       "Unlimited posts",
       "Advanced analytics",

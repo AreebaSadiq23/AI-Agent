@@ -40,7 +40,14 @@ export default function TaskDetailPage() {
       return status && !["completed", "failed"].includes(status) ? 2000 : false;
     },
   });
-  const { data: content } = useQuery({ queryKey: ["content"], queryFn: contentApi.list });
+  const { data: content } = useQuery({
+    queryKey: ["content"],
+    queryFn: contentApi.list,
+    refetchInterval: () => {
+      const status = task?.status;
+      return status && !["completed", "failed"].includes(status) ? 2000 : false;
+    },
+  });
 
   if (!task) return <PageLoader />;
   const meta = TASK_STATUS_META[task.status];

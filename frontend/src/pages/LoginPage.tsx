@@ -7,7 +7,7 @@ import { Spinner } from "@/components/ui";
 
 const HIGHLIGHTS = [
   "A Master Orchestrator that turns goals into finished campaigns",
-  "18 specialized AI employees collaborating autonomously",
+  "20 specialized AI employees collaborating autonomously",
   "Live task timeline, approvals, scheduling and analytics",
 ];
 

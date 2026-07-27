@@ -132,7 +132,7 @@ export default function WorkforcePage() {
     <>
       <SectionTitle
         title="AI Workforce"
-        subtitle="18 autonomous employees, coordinated by the Master Orchestrator."
+        subtitle={`${agents.length} autonomous employees, coordinated by the Master Orchestrator.`}
       />
 
       {groups.map((cat) => {
